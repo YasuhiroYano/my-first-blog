@@ -1,0 +1,17 @@
+{% load static %}
+<html>
+    <head>
+        <title>Graph </title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+             <h1><a href="/">Graph</a></h1>
+        </div>
+        <p>"from http://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv"</p>
+        <img src="{% url 'graph_app:scatter' %}" width="600" height="400" >
+    </body>
+</html>
